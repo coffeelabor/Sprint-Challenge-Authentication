@@ -7,7 +7,7 @@ module.exports = {
   findById
 };
 
-function add() {
+function add(user) {
   return db("users")
     .insert(user, "id")
     .then(ids => {
